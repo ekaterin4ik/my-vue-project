@@ -1,0 +1,7 @@
+body {
+  background-color: #363232; 
+  font-family: 'Roboto', sans-serif; 
+  min-height: 100vh;
+  margin: 50px;
+  padding: 0;
+}
