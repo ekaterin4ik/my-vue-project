@@ -4,10 +4,10 @@
   <div v-else-if="error">Ошибка: {{ error }}</div>
   
   <div v-else-if="movie">
-    <!-- Кнопка "Назад" размещена перед карточкой -->
+    
     <button @click="goBack">Назад к списку </button>
     
-    <!-- Карточка для отображения фильма -->
+    
     <div class="movie-card">
       <img :src="movie.poster" alt="Постер фильма" class="movie-poster" />
       <div class="movie-details">

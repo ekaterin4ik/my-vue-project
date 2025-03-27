@@ -4,7 +4,6 @@
       <h1 class="ht">#MOVIENOW</h1>
     </div>
 
-    <!-- Сортировки -->
     <div class="filters">
       <h1 class="hht">Фильмы</h1>
       <div class="checkbox-container">
@@ -19,11 +18,10 @@
       </div>
     </div>
 
-    <!-- Прелоадер -->
+   
     <div v-if="store.loading">Загрузка...</div>
     <div v-else-if="store.error">Ошибка: {{ store.error }}</div>
 
-    <!-- Список фильмов -->
     <div v-else class="movies-list">
       <MovieCard
         v-for="movie in sortedMovies"
